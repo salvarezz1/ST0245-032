@@ -1,0 +1,136 @@
+/etc
+├── [root      401]  anacrontab
+├── [root     4.0K]  apache2
+│   └── [root     4.0K]  conf-available
+│       └── [root      127]  javascript-common.conf
+├── [root      433]  apg.conf
+├── [root     4.0K]  apm
+│   ├── [root     4.0K]  event.d
+│   │   ├── [root     2.2K]  20hdparm
+│   │   └── [root      753]  anacron
+│   ├── [root     4.0K]  resume.d
+│   │   └── [root       17]  20alsa -> ../scripts.d/alsa
+│   ├── [root     4.0K]  scripts.d
+│   │   └── [root      228]  alsa
+│   └── [root     4.0K]  suspend.d
+│       └── [root       17]  80alsa -> ../scripts.d/alsa
+├── [root     4.0K]  apparmor
+│   ├── [root     4.0K]  init
+│   │   └── [root     4.0K]  network-interface-security
+│   │       └── [root       33]  sbin.dhclient -> ../../../apparmor.d/sbin.dhclient
+│   ├── [root     1.4K]  parser.conf
+│   └── [root     1.9K]  subdomain.conf
+├── [root     4.0K]  apparmor.d
+│   ├── [root     4.0K]  abstractions
+│   │   ├── [root      695]  apache2-common
+│   │   ├── [root     4.0K]  apparmor_api
+│   │   │   ├── [root      393]  change_profile
+│   │   │   ├── [root      476]  examine
+│   │   │   ├── [root      502]  find_mountpoint
+│   │   │   ├── [root      475]  introspect
+│   │   │   └── [root      625]  is_enabled
+│   │   ├── [root      308]  aspell
+│   │   ├── [root     1.5K]  audio
+│   │   ├── [root     1.5K]  authentication
+│   │   ├── [root     5.8K]  base
+│   │   ├── [root     1.5K]  bash
+│   │   ├── [root      798]  consoles
+│   │   ├── [root      714]  cups-client
+│   │   ├── [root      593]  dbus
+│   │   ├── [root      630]  dbus-accessibility
+│   │   ├── [root      637]  dbus-accessibility-strict
+│   │   ├── [root      638]  dbus-session
+│   │   ├── [root      919]  dbus-session-strict
+│   │   ├── [root      677]  dbus-strict
+│   │   ├── [root      246]  dconf
+│   │   ├── [root      572]  dovecot-common
+│   │   ├── [root     2.0K]  enchant
+│   │   ├── [root     3.7K]  evince
+│   │   ├── [root      456]  fcitx
+│   │   ├── [root      712]  fcitx-strict
+│   │   ├── [root     1.8K]  fonts
+│   │   ├── [root     1.7K]  freedesktop.org
+│   │   ├── [root     3.1K]  gnome
+│   │   ├── [root      318]  gnupg
+│   │   ├── [root      640]  ibus
+│   │   ├── [root     2.0K]  kde
+│   │   ├── [root     1.1K]  kerberosclient
+│   │   ├── [root      824]  launchpad-integration
+│   │   ├── [root      686]  ldapclient
+│   │   ├── [root      659]  libpam-systemd
+│   │   ├── [root     3.6K]  lightdm
+│   │   ├── [root     3.2K]  lightdm_chromium-browser
+│   │   ├── [root      489]  likewise
+│   │   ├── [root      436]  mdns
+│   │   ├── [root      593]  mir
+│   │   ├── [root      471]  mozc
+│   │   ├── [root      641]  mysql
+│   │   ├── [root     3.6K]  nameservice
+│   │   ├── [root      524]  nis
+│   │   ├── [root      519]  nvidia
+│   │   ├── [root      470]  openssl
+│   │   ├── [root       93]  orbit2
+│   │   ├── [root      899]  p11-kit
+│   │   ├── [root      860]  perl
+│   │   ├── [root      974]  php
+│   │   ├── [root      105]  php5
+│   │   ├── [root     1.1K]  postfix-common
+│   │   ├── [root     1.3K]  private-files
+│   │   ├── [root      852]  private-files-strict
+│   │   ├── [root     1.5K]  python
+│   │   ├── [root      906]  ruby
+│   │   ├── [root      803]  samba
+│   │   ├── [root      476]  smbpass
+│   │   ├── [root      924]  ssl_certs
+│   │   ├── [root      650]  ssl_keys
+│   │   ├── [root     1.6K]  svn-repositories
+│   │   ├── [root      698]  ubuntu-bittorrent-clients
+│   │   ├── [root     1.6K]  ubuntu-browsers
+│   │   ├── [root     4.0K]  ubuntu-browsers.d
+│   │   │   ├── [root      638]  firefox
+│   │   │   ├── [root     3.5K]  java
+│   │   │   ├── [root      248]  kde
+│   │   │   ├── [root      324]  mailto
+│   │   │   ├── [root     1.7K]  multimedia
+│   │   │   ├── [root      334]  plugins-common
+│   │   │   ├── [root      993]  productivity
+│   │   │   ├── [root      654]  text-editors
+│   │   │   ├── [root     1.4K]  ubuntu-integration
+│   │   │   ├── [root      168]  ubuntu-integration-xul
+│   │   │   └── [root      795]  user-files
+│   │   ├── [root      611]  ubuntu-console-browsers
+│   │   ├── [root      601]  ubuntu-console-email
+│   │   ├── [root      897]  ubuntu-email
+│   │   ├── [root      339]  ubuntu-feed-readers
+│   │   ├── [root      182]  ubuntu-gnome-terminal
+│   │   ├── [root     3.2K]  ubuntu-helpers
+│   │   ├── [root      343]  ubuntu-konsole
+│   │   ├── [root     2.2K]  ubuntu-media-players
+│   │   ├── [root     2.4K]  ubuntu-unity7-base
+│   │   ├── [root      191]  ubuntu-unity7-launcher
+│   │   ├── [root      192]  ubuntu-unity7-messaging
+│   │   ├── [root      237]  ubuntu-xterm
+│   │   ├── [root      883]  user-download
+│   │   ├── [root      837]  user-mail
+│   │   ├── [root      889]  user-manpages
+│   │   ├── [root      654]  user-tmp
+│   │   ├── [root      864]  user-write
+│   │   ├── [root      123]  video
+│   │   ├── [root      565]  wayland
+│   │   ├── [root      705]  web-data
+│   │   ├── [root      739]  winbind
+│   │   ├── [root      585]  wutmp
+│   │   ├── [root     1.8K]  X
+│   │   ├── [root      883]  xad
+│   │   └── [root      673]  xdg-desktop
+│   ├── [root     4.0K]  cache
+│   │   ├── [root     1.5K]  .features
+│   │   ├── [root      91K]  lightdm-guest-session
+│   │   ├── [root     113K]  sbin.dhclient
+│   │   ├── [root     676K]  usr.bin.evince
+│   │   ├── [root      50K]  usr.lib.snapd.snap-confine.real
+│   │   ├── [root      34K]  usr.sbin.cups-browsed
+│   │   ├── [root      85K]  usr.sbin.cupsd
+│   │   ├── [root      21K]  usr.sbin.ippusbxd
+│   │   └── [root      58K]  usr.sbin.tcpdump
+│   ├── [root     4.0K]  disable
